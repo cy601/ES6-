@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板字符串</title>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <ul>
+            <li>
+                <p id="1">小马哥</p>
+            </li>
+        </ul> -->
+    </div>
+
+    <script>
+        const oBox = document.querySelector('.box');
+        let id = 1;
+        let name = '小马哥'
+        /* 传统实现方法 */
+        // oBox.innerHTML = "<ul><li><p id=" + id + ">" + name + "</p></li></ul> ";
+
+
+        /* 
+        模板字符串:使用tab键上面的反引号``,插入变量时使用${变量名} 
+        */
+
+        
+        // tab键上的键  反引号
+        // ${ { variable } }
+        let htmlStr = `  <ul>
+            <li>
+                <p id=${id}>${name}</p>
+            </li>
+        </ul>`
+        oBox.innerHTML = htmlStr;
+    </script>
+</body>
+
+</html>
