@@ -1,1 +1,1 @@
-ECMAScript基本语法
+ECMAScript 6基本语法
